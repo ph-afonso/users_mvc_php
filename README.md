@@ -16,6 +16,12 @@ As configurações de Banco de Dados e URL estão no arquivo *src/Config.php*
 É importante configurar corretamente a constante *BASE_DIR*:
 > const BASE_DIR = '/**PastaDoProjeto**/public';
 
+## Database
+Dentro do arquivo [database.zip](https://github.com/user-attachments/files/16734136/database.zip), há um arquivo de banco de dados que deve ser instalado para o funcionamento do projeto.
+
+Descompacte o arquivo database.zip.
+Importe o arquivo .sql para seu banco de dados (por exemplo, via phpMyAdmin ou linha de comando MySQL):
+
 ## Uso
 Você deve acessar a pasta *public* do projeto.
 
@@ -27,7 +33,9 @@ O ideal é criar um ***alias*** específico no servidor que direcione diretament
 namespace src\models;
 use \core\Model;
 
-class Usuario extends Model {
+class Users extends Model {
 
 }
 ```
+
+
